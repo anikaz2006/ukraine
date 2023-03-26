@@ -1,49 +1,60 @@
 technologies = {
+	
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+
+
 	tech_support = {
 
 		enable_equipments = {
 			support_equipment_1
 		}
-
-		path = {
-			leads_to_tech = tech_engineering
-			research_cost_coeff = 1
-		}
+		
 		
 		path = {
-			leads_to_tech = tech_ARV
+			leads_to_tech = tech_engineers
 			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = tech_AMV
-			research_cost_coeff = 1
-		}		
-
+		}	
+		
 		path = {
 			leads_to_tech = tech_recon
 			research_cost_coeff = 1
-		}
-
+		}	
 		path = {
-			leads_to_tech = tech_signal_company
+			leads_to_tech = tech_field_hospital
 			research_cost_coeff = 1
-		}
+		}					
 
 		path = {
 			leads_to_tech = tech_logistics_company
 			research_cost_coeff = 1
 		}
-
 		path = {
-			leads_to_tech = tech_sniper
+			leads_to_tech = tech_military_police
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_signal_company
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_maintenance_company
 			research_cost_coeff = 1
 		}
 		research_cost = 1.0
-		start_year = 2022
+		start_year = 1918
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = @1918 }
 		}
 		
 		categories = {
@@ -69,1512 +80,7 @@ technologies = {
 			}
 		}
 	}
-	####################################################################
-	tech_engineering = {
-		enable_equipments = {
-			engineering_equipment_1
-		}
 
-		research_cost = 1.5
-		start_year = 1910
-		folder = {
-			name = support_folder
-			position = { x = 0 y = 4 }
-		}
-
-		path = {
-			leads_to_tech = tech_engineers
-			research_cost_coeff = 1
-		}
-		
-		categories = {
-			support_tech
-		}
-	}
-	
-	tech_ARV = {
-		enable_equipments = {
-			ARV_equipment_1
-		}
-
-		research_cost = 1.5
-		start_year = 1910
-		folder = {
-			name = support_folder
-			position = { x = 2 y = 4 }
-		}
-
-		path = {
-			leads_to_tech = tech_maintenance_company
-			research_cost_coeff = 1
-		}
-		
-		categories = {
-			support_tech
-		}
-	}
-	
-	tech_AMV = {
-		enable_equipments = {
-			AMV_equipment_1
-		}
-
-		research_cost = 1.5
-		start_year = 1910
-		folder = {
-			name = support_folder
-			position = { x = 4 y = 4 }
-		}
-
-		path = {
-			leads_to_tech = tech_field_hospital
-			research_cost_coeff = 1
-		}
-		
-		categories = {
-			support_tech
-		}
-	}
-#mod_start
-
-	
-
-	tech_sniper = {
-
-		enable_subunits = {
-			sniper
-		}
-		
-		on_research_complete = {
-			hidden_effect = {
-				army_experience = 5		#mod update
-				}
-		}
-		
-		path = {
-			leads_to_tech = tech_sniper2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5				#mod update
-		start_year = 1936
-		folder = {
-			name = support_folder
-			position = { x = 12 y = 4 }
-		}
-		
-		categories = {
-			support_tech
-			sniper_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1937.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1938.1.1"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1939.1.1"
-			}
-			modifier = {
-				factor = 10
-				date > "1940.1.1"
-			}
-		}
-	}
-	
-	tech_sniper2 = {
-
-		sniper = {
-			recon = 1
-			max_organisation = 10		#mod update
-			soft_attack = 0.1
-			river = {
-				attack = 0.1
-				defence = 0.1
-			}
-			amphibious = {	
-				defence = 0.2
-			}
-		}
-		
-		path = {
-			leads_to_tech = tech_sniper3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1				#mod update
-		start_year = 1939
-		folder = {
-			name = support_folder
-			position = { x = 12 y = 7 }
-		}
-		
-		categories = {
-			support_tech
-			sniper_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1940.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.1"
-			}
-		}
-	}
-	
-	tech_sniper3 = {
-
-		sniper = {
-			recon  = 1
-			max_organisation = 10		#mod update
-			soft_attack = 0.1
-			forest = {
-				attack = 0.1
-				defence = 0.1
-			}
-			jungle = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		
-		path = {
-			leads_to_tech = tech_sniper4
-			research_cost_coeff = 1
-		}		
-
-		research_cost = 1				#mod update
-		start_year = 1942
-		folder = {
-			name = support_folder
-			position = { x = 12 y = 9 }
-		}
-		
-		categories = {
-			support_tech
-			sniper_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1945.1.1"
-			}
-		}
-	}
-	
-	tech_sniper4 = {
-
-		sniper = {
-			recon  = 1
-			max_organisation = 10		#mod update
-			soft_attack = 0.1
-			mountain = {
-				attack = 0.1
-				defence = 0.1
-			}
-			hills = {
-				attack = 0.1	
-				defence = 0.1
-			}
-		}
-
-		research_cost = 1				#mod update
-		start_year = 1945
-		folder = {
-			name = support_folder
-			position = { x = 12 y = 11 }
-		}
-		
-		categories = {
-			support_tech
-			sniper_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1946.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1947.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1948.1.1"
-			}
-		}
-	}	
-	
-	tech_flamethrower_sppt = {
-
-		enable_subunits = {
-			flamethrower_sppt
-		}
-		
-		on_research_complete = {
-			hidden_effect = {
-				army_experience = 5		#mod update
-				}
-		}
-		
-		path = {
-			leads_to_tech = tech_flamethrower_sppt2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5				#mod update
-		start_year = 1936
-		folder = {
-			name = support_folder
-			position = { x = 16 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			flamethrower_sppt_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1937.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1938.1.1"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1939.1.1"
-			}
-			modifier = {
-				factor = 10
-				date > "1940.1.1"
-			}
-		}
-	}
-	
-	tech_flamethrower_sppt2 = {
-
-		flamethrower_sppt = {
-			soft_attack = 0.1
-			breakthrough  = 0.15
-			fort = {
-				attack = 0.1
-			}
-			urban = {
-				attack = 0.1
-			}
-		}
-
-		enable_equipment_modules = {
-			flamethrower
-		}
-
-		enable_subunits = {				#mod update
-			light_flame_tank
-			medium_flame_tank
-			heavy_flame_tank
-		}
-		
-		
-		
-		path = {
-			leads_to_tech = tech_flamethrower_sppt3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1
-		start_year = 1939
-		folder = {
-			name = support_folder
-			position = { x = 16 y = @1939 }
-		}
-		
-		categories = {
-			support_tech
-			flamethrower_sppt_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1940.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.1"
-			}
-		}
-	}
-	
-	tech_flamethrower_sppt3 = {
-
-		flamethrower_sppt = {
-			soft_attack = 0.1
-			breakthrough = 0.15
-			fort = {
-				attack = 0.1
-			}
-			urban = {
-				attack = 0.1
-			}
-		}
-		light_flame_tank = {			#mod update
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		medium_flame_tank = {			#mod update
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		heavy_flame_tank = {			#mod update
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		path = {
-			leads_to_tech = tech_flamethrower_sppt4
-			research_cost_coeff = 1
-		}		
-
-		research_cost = 1
-		start_year = 1942
-		folder = {
-			name = support_folder
-			position = { x = 16 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			flamethrower_sppt_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1945.1.1"
-			}
-		}
-	}
-	
-	tech_flamethrower_sppt4 = {
-
-		flamethrower_sppt = {
-			soft_attack = 0.1
-			breakthrough  = 0.15
-			fort = {
-				attack = 0.1
-			}
-			urban = {
-				attack = 0.1
-			}
-		}
-		light_flame_tank = {			#mod update
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		medium_flame_tank = {			#mod update
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		heavy_flame_tank = {			#mod update
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		
-		research_cost = 1
-		start_year = 1945
-		folder = {
-			name = support_folder
-			position = { x = 16 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			flamethrower_sppt_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1946.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1947.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1948.1.1"
-			}
-		}
-	}	
-	
-	tech_mortar = {
-
-		enable_subunits = {
-			mortar
-		}
-		
-		on_research_complete = {
-			hidden_effect = {
-				army_experience = 5			#mod update
-				}
-		}
-		
-		path = {
-			leads_to_tech = tech_mortar2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5					#mod update
-		start_year = 1936
-		folder = {
-			name = support_folder
-			position = { x = 18 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			mortar_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1937.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1938.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-			modifier = {
-				factor = 7
-				date > "1940.1.1"
-			}
-		}
-	}
-	
-	tech_mortar2 = {
-
-		mortar = {
-			entrenchment  = 1
-			soft_attack = 0.1
-			hard_attack = 0.05
-			ap_attack = 0.05
-		}
-		
-		path = {
-			leads_to_tech = tech_mortar3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1
-		start_year = 1939
-		folder = {
-			name = support_folder
-			position = { x = 18 y = @1939 }
-		}
-		
-		categories = {
-			support_tech
-			mortar_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1940.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.1"
-			}
-		}
-	}
-	
-	tech_mortar3 = {
-
-		mortar = {
-			entrenchment  = 1
-			soft_attack = 0.1
-			hard_attack = 0.05
-			ap_attack = 0.05
-		}
-	
-		path = {
-			leads_to_tech = tech_mortar4
-			research_cost_coeff = 1
-		}		
-
-		research_cost = 1
-		start_year = 1942
-		folder = {
-			name = support_folder
-			position = { x = 18 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			mortar_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1945.1.1"
-			}
-		}
-	}
-	
-	tech_mortar4 = {
-
-		mortar = {
-			entrenchment = 1
-			soft_attack = 0.1
-			hard_attack = 0.05
-			ap_attack = 0.05
-		}
-
-		research_cost = 1
-		start_year = 1945
-		folder = {
-			name = support_folder
-			position = { x = 18 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			mortar_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1946.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1947.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1948.1.1"
-			}
-		}
-	}	
-	
-	tech_wardog = {
-
-		enable_subunits = {
-			wardog
-		}
-		
-		on_research_complete = {
-			hidden_effect = {
-				army_experience = 5			#mod update
-				}
-		}
-		
-		path = {
-			leads_to_tech = tech_wardog2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1					#mod update
-		start_year = 1936
-		folder = {
-			name = support_folder
-			position = { x = 20 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			wardog_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 05
-				is_major = yes
-			}
-			
-			modifier = {
-				factor = 1
-				date > "1937.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1938.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-			modifier = {
-				factor = 2
-				date > "1940.1.1"
-			}
-		}
-	}
-	
-	tech_wardog2 = {
-
-		wardog = {
-		suppression_factor = 0.05
-		recon = 0.5
-		urban = {
-			attack = 0.1
-		}
-		}
-		
-		path = {
-			leads_to_tech = tech_wardog3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1
-		start_year = 1939
-		folder = {
-			name = support_folder
-			position = { x = 20 y = @1939 }
-		}
-		
-		categories = {
-			support_tech
-			wardog_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1
-				date > "1940.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1941.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.1"
-			}
-		}
-	}
-	
-	tech_wardog3 = {
-
-		wardog = {
-		suppression_factor = 0.05
-		soft_attack = 0.05
-		urban = {
-			attack = 0.1
-		}
-		}
-	
-		path = {
-			leads_to_tech = tech_wardog4
-			research_cost_coeff = 1
-		}		
-
-		research_cost = 1
-		start_year = 1942
-		folder = {
-			name = support_folder
-			position = { x = 20 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			wardog_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1944.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1945.1.1"
-			}
-		}
-	}
-	
-	tech_wardog4 = {
-
-		wardog = {
-		soft_attack = 0.05
-		suppression_factor = 0.05
-		urban = {
-			attack = 0.1
-		}
-		}
-
-		research_cost = 1
-		start_year = 1945
-		folder = {
-			name = support_folder
-			position = { x = 20 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			wardog_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1
-				date > "1946.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1947.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1948.1.1"
-			}
-		}
-	}	
-	
-	tech_command = {
-
-		enable_subunits = {
-			command
-		}
-		
-		on_research_complete = {
-			hidden_effect = {
-				army_experience = 10
-				}
-		}
-			
-		path = {
-			leads_to_tech = tech_command2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-		start_year = 1936
-		folder = {
-			name = support_folder
-			position = { x = 22 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			command_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 05
-				is_major = yes
-			}
-			
-			modifier = {
-				factor = 1
-				date > "1937.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1938.1.1"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1939.1.1"
-			}
-			modifier = {
-				factor = 5
-				date > "1940.1.1"
-			}
-		}
-	}
-	
-	tech_command2 = {
-
-		command = {
-		max_organisation = 10
-		default_morale = 0.5
-		combat_width = -1
-		}
-		
-		path = {
-			leads_to_tech = tech_command3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1939
-		folder = {
-			name = support_folder
-			position = { x = 22 y = @1939 }
-		}
-		
-		categories = {
-			support_tech
-			command_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1
-				date > "1940.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.1"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1942.1.1"
-			}
-		}
-	}
-	
-	tech_command3 = {
-
-		command = {
-		max_organisation = 10
-		default_morale = 0.5
-		combat_width = -1
-		}
-	
-		path = {
-			leads_to_tech = tech_command4
-			research_cost_coeff = 1
-		}		
-
-		research_cost = 1.5
-		start_year = 1942
-		folder = {
-			name = support_folder
-			position = { x = 22 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			command_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1944.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1945.1.1"
-			}
-		}
-	}
-	
-	tech_command4 = {
-
-		command = {
-		max_organisation = 10
-		default_morale = 0.5
-		combat_width = -1
-		}
-
-		research_cost = 1.5
-		start_year = 1945
-		folder = {
-			name = support_folder
-			position = { x = 22 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			command_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1
-				date > "1946.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1947.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1948.1.1"
-			}
-		}
-	}	
-	
-	tech_gunner = {
-
-		enable_subunits = {
-			gunner
-		}
-		
-		on_research_complete = {
-			hidden_effect = {
-				army_experience = 5			#mod update
-				}
-		}
-			
-		path = {
-			leads_to_tech = tech_gunner2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1
-		start_year = 1936
-		folder = {
-			name = support_folder
-			position = { x = 24 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			gunner_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 5
-				is_major = yes
-			}
-			
-			modifier = {
-				factor = 1
-				date > "1937.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1938.1.1"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1939.1.1"
-			}
-			modifier = {
-				factor = 5
-				date > "1940.1.1"
-			}
-		}
-	}
-	
-	tech_gunner2 = {
-
-		gunner = {
-			max_organisation = 5
-			default_morale = 0.1
-			soft_attack = 0.1
-			entrenchment  = 1
-		}
-		
-		path = {
-			leads_to_tech = tech_gunner3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1
-		start_year = 1939
-		folder = {
-			name = support_folder
-			position = { x = 24 y = @1939 }
-		}
-		
-		categories = {
-			support_tech
-			gunner_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1
-				date > "1940.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.1"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1942.1.1"
-			}
-		}
-	}
-	
-	tech_gunner3 = {
-
-		gunner = {
-			max_organisation = 5
-			default_morale = 0.1
-			soft_attack = 0.1
-			river = {
-				defence = 0.1
-			}
-		}
-	
-		path = {
-			leads_to_tech = tech_gunner4
-			research_cost_coeff = 1
-		}		
-
-		research_cost = 1
-		start_year = 1942
-		folder = {
-			name = support_folder
-			position = { x = 24 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			gunner_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1944.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1945.1.1"
-			}
-		}
-	}
-	
-	tech_gunner4 = {
-
-		gunner = {
-			max_organisation = 5
-			default_morale = 0.2
-			soft_attack = 0.1
-			breakthrough = 0.1
-		}
-
-		research_cost = 1
-		start_year = 1945
-		folder = {
-			name = support_folder
-			position = { x = 24 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			gunner_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1
-				date > "1946.1.1"
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1947.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1948.1.1"
-			}
-		}
-	}
-
-	tech_raider = {
-
-		enable_subunits = {
-			raider
-		}
-		
-		on_research_complete = {
-			hidden_effect = {
-				army_experience = 5			#mod update
-				}
-		}
-		
-		path = {
-			leads_to_tech = tech_raider2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5					#mod update
-		start_year = 1936
-		folder = {
-			name = support_folder
-			position = { x = 26 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			raider_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			
-			modifier = {
-				factor = 1.2
-				date > "1937.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1938.1.1"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1939.1.1"
-			}
-			modifier = {
-				factor = 10
-				date > "1940.1.1"
-			}
-		}
-	}
-	
-	tech_raider2 = {
-
-		raider = {
-			recon = 1
-			max_organisation = 10			#mod update
-			soft_attack = 0.25
-			hard_attack = 0.05
-			ap_attack = 0.05
-			breakthrough = 0.05
-		}
-		
-		path = {
-			leads_to_tech = tech_raider3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1939
-		folder = {
-			name = support_folder
-			position = { x = 26 y = @1939 }
-		}
-		
-		categories = {
-			support_tech
-			raider_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1940.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1941.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.1"
-			}
-		}
-	}
-	
-	tech_raider3 = {
-
-		raider = {
-			entrenchment  = 1
-			max_organisation = 10			#mod update
-			soft_attack = 0.25
-			hard_attack = 0.05
-			ap_attack = 0.05
-			breakthrough = 0.05
-		}
-		
-		path = {
-			leads_to_tech = tech_raider4
-			research_cost_coeff = 1
-		}		
-
-		research_cost = 1.5
-		start_year = 1942
-		folder = {
-			name = support_folder
-			position = { x = 26 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			raider_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1945.1.1"
-			}
-		}
-	}
-	
-	tech_raider4 = {
-
-		raider = {
-			recon  = 1
-			entrenchment  = 1
-			max_organisation = 10			#mod update
-			hard_attack = 0.05
-			ap_attack = 0.05
-			breakthrough = 0.05
-		}
-
-		research_cost = 1.5
-		start_year = 1945
-		folder = {
-			name = support_folder
-			position = { x = 26 y = 0 }
-		}
-		
-		categories = {
-			support_tech
-			raider_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 1.2
-				date > "1946.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1947.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1948.1.1"
-			}
-		}
-	}
-##########################################lancaster
 	
 	tech_engineers = {
 
@@ -1591,7 +97,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 7 }
+			position = { x = 0 y = @1936 }
 		}
 		
 		categories = {
@@ -1672,7 +178,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 9 }
+			position = { x = 0 y = @1939 }
 		}
 		
 		categories = {
@@ -1743,7 +249,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 11 }
+			position = { x = 0 y = @1942 }
 		}
 		
 		categories = {
@@ -1808,7 +314,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 13 }
+			position = { x = 0 y = @1945 }
 		}
 		
 		categories = {
@@ -1854,7 +360,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 6 y = 4 }
+			position = { x = 2 y = @1936 }
 		}
 		
 		categories = {
@@ -1906,7 +412,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 6 y = 7 }
+			position = { x = 2 y = @1939 }
 		}
 		
 		categories = {
@@ -1948,7 +454,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 6 y = 9 }
+			position = { x = 2 y = @1942 }
 		}
 		
 		categories = {
@@ -1985,7 +491,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 6 y = 11 }
+			position = { x = 2 y = @1945 }
 		}
 		
 		categories = {
@@ -2028,7 +534,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 4 y = 0 }
+			position = { x = 4 y = @1936 }
 		}
 		
 		categories = {
@@ -2127,7 +633,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 4 y = 0 }
+			position = { x = 4 y = @1942 }
 		}
 		
 		categories = {
@@ -2154,7 +660,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 4 y = 0 }
+			position = { x = 4 y = @1945 }
 		}
 		
 		categories = {
@@ -2201,7 +707,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 7 }
+			position = { x = 6 y = @1936 }
 		}
 		
 		categories = {
@@ -2249,7 +755,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 9 }
+			position = { x = 6 y = @1939 }
 		}
 		
 		categories = {
@@ -2292,7 +798,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 11 }
+			position = { x = 6 y = @1942 }
 		}
 		
 		categories = {
@@ -2330,7 +836,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 13 }
+			position = { x = 6 y = @1945 }
 		}
 		
 		categories = {
@@ -2377,7 +883,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 4 y = 7 }
+			position = { x = 8 y = @1936 }
 		}
 		
 		categories = {
@@ -2422,7 +928,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 4 y = 9 }
+			position = { x = 8 y = @1939 }
 		}
 		
 		categories = {
@@ -2466,7 +972,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 4 y = 11 }
+			position = { x = 8 y = @1942 }
 		}
 		
 		categories = {
@@ -2505,7 +1011,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 4 y = 13 }
+			position = { x = 8 y = @1945 }
 		}
 		
 		categories = {
@@ -2562,7 +1068,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 10 y = 4 }
+			position = { x = 10 y = @1936 }
 		}
 		
 		categories = {
@@ -2612,7 +1118,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 10 y = 7 }
+			position = { x = 10 y = @1939 }
 		}
 		
 		categories = {
@@ -2661,7 +1167,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 10 y = 9 }
+			position = { x = 10 y = @1942 }
 		}
 		
 		categories = {
@@ -2700,7 +1206,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 10 y = 11 }
+			position = { x = 10 y = @1945 }
 		}
 		
 		categories = {
@@ -2750,7 +1256,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 8 y = 4 }
+			position = { x = 12 y = @1936 }
 		}
 		
 		categories = {
@@ -2786,7 +1292,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 8 y = 7 }
+			position = { x = 12 y = @1939 }
 		}
 		
 		categories = {
@@ -2829,7 +1335,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 8 y = 9 }
+			position = { x = 12 y = @1942 }
 		}
 		
 		categories = {
@@ -2867,7 +1373,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 8 y = 11 }
+			position = { x = 12 y = @1945 }
 		}
 		
 		categories = {
@@ -2905,7 +1411,7 @@ technologies = {
 		start_year = 1910
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = @1918 }
 		}
 
 		path = {
