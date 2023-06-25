@@ -58,3 +58,4 @@ tags={
 picture="showdown.jpg"
 supported_version="1.12.*"
 remote_file_id="2881149855"
+path="mod/ukraine"
