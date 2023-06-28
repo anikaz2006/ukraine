@@ -4,7 +4,7 @@ sub_units = {
         map_icon_category = armored
         ai_priority = 5
         priority = 5
-        active = yes
+        active = no
     
         type = {
             armor
@@ -25,17 +25,21 @@ sub_units = {
 		max_strength = 25
 		max_organisation = 10
 		default_morale = 0.3
-		manpower = 40
+		manpower = 56
 
 		#Misc Abilities
 		training_time = 25
 		suppression = 1.5
 		weight = 1.25
 		supply_consumption = 1.12
+
+		initiative = 0.02
+		breakthrough = 0.6
 	
   
 		need = {
 			abrams_chassis = 14
+			infantry_equipment = 14
 		}
 		plains = {
 		   attack = 0.2
@@ -91,7 +95,7 @@ sub_units = {
         map_icon_category = armored
         ai_priority = 5
         priority = 5
-        active = yes
+        active = no
     
         type = {
             armor
@@ -112,17 +116,21 @@ sub_units = {
 		max_strength = 25
 		max_organisation = 10
 		default_morale = 0.3
-		manpower = 40
+		manpower = 56
 
 		#Misc Abilities
 		training_time = 25
 		suppression = 1.5
 		weight = 1.25
 		supply_consumption = 1.12
+
+		initiative = 0.02
+		breakthrough = 0.6
 	
   
 		need = {
 			leopard_chassis = 14
+			infantry_equipment = 14
 		}
 		plains = {
 		   attack = 0.2
@@ -178,7 +186,7 @@ sub_units = {
         map_icon_category = armored
         ai_priority = 5
         priority = 5
-        active = yes
+        active = no
     
         type = {
             armor
@@ -199,17 +207,21 @@ sub_units = {
 		max_strength = 25
 		max_organisation = 10
 		default_morale = 0.3
-		manpower = 40
+		manpower = 56
 
 		#Misc Abilities
 		training_time = 25
 		suppression = 1.5
 		weight = 1.25
 		supply_consumption = 1.12
+
+		initiative = 0.02
+		breakthrough = 0.6
 	
   
 		need = {
 			challenger_chassis = 14
+			infantry_equipment = 14
 		}
 		plains = {
 		   attack = 0.2
@@ -265,7 +277,7 @@ sub_units = {
         map_icon_category = armored
         ai_priority = 5
         priority = 5
-        active = yes
+        active = no
     
         type = {
             armor
@@ -286,17 +298,21 @@ sub_units = {
 		max_strength = 25
 		max_organisation = 10
 		default_morale = 0.3
-		manpower = 40
+		manpower = 42
 
 		#Misc Abilities
 		training_time = 25
 		suppression = 1.5
 		weight = 1.25
 		supply_consumption = 1.12
+
+		initiative = 0.02
+		breakthrough = 0.6
 	
   
 		need = {
 			leclerc_chassis = 14
+			infantry_equipment = 14
 		}
 		plains = {
 		   attack = 0.2

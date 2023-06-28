@@ -1,0 +1,26 @@
+state = {
+    id = 411
+    name = "STATE_411"
+    manpower = 3303
+
+    state_category = town
+
+    history = {
+        owner = PMC
+        
+        victory_points = { 3040 10 }
+        
+        buildings = {
+            arms_factory = 1
+            anti_air_building = 3
+        }
+        
+        add_core_of = PMC
+        add_core_of = RUS
+    }
+
+    provinces = {
+        3040 
+    }
+
+}

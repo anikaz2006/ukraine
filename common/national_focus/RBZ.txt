@@ -1,0 +1,25 @@
+focus_tree = {
+	id = RBZ
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = rbz
+		}
+	}
+	focus = {
+		id = RBZ_focus
+		icon = GFX_IMAGE_NOT_FOUND
+		cost = 0
+		x = 0
+		y = 0
+		available = {
+			always = false
+		}
+		completion_reward={
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

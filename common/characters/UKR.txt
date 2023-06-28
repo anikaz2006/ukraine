@@ -16,6 +16,86 @@ characters = {
 			}
 		}
 	}
+	
+	UKR_Boiko_Yurii = {
+		name = UKR_Boiko_Yurii
+		portraits = {
+			civilian = {
+				large = "/gfx/leaders/UKR/UKR_Boiko_Yurii.dds"
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = oligarchy
+			traits = {  
+				
+			}
+		}
+	}
+	
+	UKR_Peter_Nikolaevich = {
+		name = UKR_Peter_Nikolaevich
+		portraits = {
+			civilian = {
+				large = "/gfx/leaders/UKR/UKR_Peter_Nikolaevich.dds"
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {  
+				
+			}
+		}
+	}
+	
+	UKR_Oleg_Tyagnibok = {
+		name = UKR_Oleg_Tyagnibok
+		portraits = {
+			civilian = {
+				large = "/gfx/leaders/UKR/UKR_Oleg_Tyagnibok.dds"
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = national_socialism
+			traits = {  
+				
+			}
+		}
+	}
+	
+	UKR_genshtab_VSY = {
+		name = UKR_genshtab_VSY
+		portraits = {
+			civilian = {
+				large = "/gfx/leaders/UKR/UKR_genshtab_VSY.dds"
+			}
+		}
+		country_leader = {
+		    expire = "1965.1.1"
+			ideology = military_dictatorship
+			traits = {
+			
+			}
+		}
+	}
+	
+	UKR_pravy_sektor = {
+		name = UKR_pravy_sektor
+		portraits = {
+			civilian = {
+				large = "/gfx/leaders/UKR/UKR_pravy_sektor.dds"
+			}
+		}
+		country_leader = {
+		    expire = "1965.1.1"
+			ideology = nationalism
+			traits = {  
+				
+			}
+		}
+	}
 
 	denys_shmyhal = {
 			name = denys_shmyhal

@@ -391,17 +391,20 @@ country_event = {
 	}
 }
 
+#БУЧА
+
 country_event = {
 	id = ukr.22
 	title = ukr.22.t
 	desc = ukr.22.desc
 
 	fire_only_once = yes
-	trigger = {
+	trigger = { 
+		tag = UKR
 		RUS = {
-			has_completed_focus = RUS_leave_kiev
+			has_country_flag = RUS_bucha_rezna
 		}
-		controls_state = 86
+		controls_province = 18130
 	}
 
 	option = {

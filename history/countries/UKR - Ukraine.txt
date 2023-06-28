@@ -206,6 +206,9 @@ add_named_threat = {
 
 #Politicians
 recruit_character = volodymir_zelenskyy
+recruit_character = UKR_Boiko_Yurii
+recruit_character = UKR_Peter_Nikolaevich
+recruit_character = UKR_Oleg_Tyagnibok
 
 #Military
 recruit_character = mikola_balan
@@ -471,6 +474,91 @@ create_equipment_variant = {
 		tank_nsb_armor_upgrade = 0
 	}
 	icon = "GFX_UKR_bronemashina3_AAB"
+}
+create_equipment_variant = {
+	name = "\"Тор-М1\""
+	type = medium_zrk1_chassis
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_light_aa1
+		engine_type_slot = tank_lengine_2
+		turret_type_slot = tank_mturret_2
+		gruz_type_slot = tank_gruz_boek
+		cyo_type_slot = tank_cyo_aa_2
+		electronic_type_slot = tank_elec_2
+		special_type_slot_1 = tank_o_rel_2
+		special_type_slot_2 = tank_o_rel_2
+		special_type_slot_4 = tank_gruz_boek
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 0
+		tank_nsb_armor_upgrade = 0
+	}
+	icon = "GFX_tunguska_AA"
+}
+create_equipment_variant = {
+	name = "\"Оса\""
+	type = medium_zrk1_chassis
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_light_aa1
+		engine_type_slot = tank_lengine_1
+		turret_type_slot = tank_mturret_b2
+		gruz_type_slot = tank_gruz_boek
+		cyo_type_slot = tank_cyo_aa_1
+		electronic_type_slot = tank_elec_2
+		special_type_slot_1 = tank_o_rel_2
+		special_type_slot_2 = tank_o_rel_2
+		special_type_slot_4 = tank_gruz_boek
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 0
+		tank_nsb_armor_upgrade = 0
+	}
+	icon = "GFX_osa_AA"
+}
+create_equipment_variant = {
+	name = "\"Тунгуска\""
+	type = medium_zrk1_chassis
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_30mm_2
+		additional_armament_slot = tank_dop_light_aa2
+		engine_type_slot = tank_lengine_1
+		turret_type_slot = tank_mturret_b2
+		gruz_type_slot = tank_gruz_boek
+		cyo_type_slot = tank_cyo_aa_1
+		electronic_type_slot = tank_elec_2
+		special_type_slot_1 = tank_o_rel_2
+		special_type_slot_2 = tank_o_rel_2
+		special_type_slot_4 = tank_gruz_boek
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 0
+		tank_nsb_armor_upgrade = 0
+	}
+	icon = "GFX_tunguska_AA"
+}
+create_equipment_variant = {
+	name = "\"Стрела-10\""
+	type = medium_zrk1_chassis
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_light_aa1
+		engine_type_slot = tank_lengine_1
+		turret_type_slot = tank_mturret_2
+		gruz_type_slot = tank_gruz_boek
+		cyo_type_slot = tank_cyo_aa_1a
+		electronic_type_slot = tank_elec_2
+		special_type_slot_1 = tank_o_rel_2
+		special_type_slot_2 = tank_o_rel_2
+		special_type_slot_4 = tank_gruz_boek
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 0
+		tank_nsb_armor_upgrade = 0
+	}
+	icon = "GFX_strela_AA"
 }
 create_equipment_variant = {
 	name = "Урал-4320"
@@ -759,7 +847,7 @@ create_equipment_variant = {
 	icon = "GFX_t64_AAC"
 }
 create_equipment_variant = {
-	name = "Т-72"
+	name = "Т-72A/Б"
 	type = t72_chassis_0
 	parent_version = 0
 	modules = {
@@ -1074,7 +1162,7 @@ create_equipment_variant = {
 	parent_version = 0
 	modules = {
 		main_armament_slot = tank_medium_aa1
-		engine_type_slot = tank_hengine_2
+		engine_type_slot = tank_mengine_2
 		gruz_type_slot = tank_gruz_boek
 		armor_type_slot = tank_armor_m_1
 		electronic_type_slot = tank_elec_1
@@ -1177,6 +1265,12 @@ add_equipment_to_stockpile = {
 	type = t64_chassis_0
 	variant_name = "Т-64Б"
 	amount = 500
+	producer = UKR
+}
+add_equipment_to_stockpile = {
+	type = t72_chassis_0
+	variant_name = "Т-72A/Б"
+	amount = 550
 	producer = UKR
 }
 add_equipment_to_stockpile = {
@@ -1357,47 +1451,76 @@ add_equipment_to_stockpile = {
 	producer = UKR
 }
 add_equipment_to_stockpile = {
+	type = nto_uav_strike_bayraktar	
+	amount = 12
+	producer = NTO
+}
+add_equipment_to_stockpile = {
 	type = artillery_equipment_0	
-	amount = 150
+	amount = 1700
 	producer = UKR
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1	
-	amount = 220
-	producer = UKR
-}
-add_equipment_to_stockpile = {
-	type = artillery_equipment_2	
-	amount = 200
-	producer = UKR
-}
-add_equipment_to_stockpile = {
-	type = artillery_equipment_3	
-	amount = 150
-	producer = UKR
-}
-add_equipment_to_stockpile = {
-	type = mortar_1_eq	
-	amount = 2000
-	producer = UKR
-}
-add_equipment_to_stockpile = {
-	type = mortar_2_eq	
-	amount = 400
-	producer = UKR
-}
-add_equipment_to_stockpile = {
-	type = atgm_1_eq	
 	amount = 800
 	producer = UKR
 }
 add_equipment_to_stockpile = {
-	type = atgm_2_eq	
+	type = artillery_equipment_2	
+	amount = 600
+	producer = UKR
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_3	
+	amount = 400
+	producer = UKR
+}
+add_equipment_to_stockpile = {
+	type = ukr_mortar_1_eq	
+	amount = 2000
+	producer = UKR
+}
+add_equipment_to_stockpile = {
+	type = ukr_mortar_2_eq	
+	amount = 400
+	producer = UKR
+}
+add_equipment_to_stockpile = {
+	type = ukr_atgm_1_eq	
+	amount = 800
+	producer = UKR
+}
+add_equipment_to_stockpile = {
+	type = ukr_atgm_2_eq	
 	amount = 500
 	producer = UKR
 }
 add_equipment_to_stockpile = {
-	type = atgm_3_eq	
+	type = ukr_atgm_3_eq	
 	amount = 500
 	producer = UKR
 }
+add_equipment_to_stockpile = {
+	type = medium_zrk2_chassis
+	variant_name = "\"Тор-М1\""
+	amount = 10
+	producer = UKR
+}
+add_equipment_to_stockpile = {
+	type = medium_zrk2_chassis
+	variant_name = "\"Оса\""
+	amount = 100
+	producer = UKR
+}
+add_equipment_to_stockpile = {
+	type = medium_zrk2_chassis
+	variant_name = "\"Тунгуска\""
+	amount = 80
+	producer = UKR
+}  
+add_equipment_to_stockpile = {
+	type = medium_zrk2_chassis
+	variant_name = "\"Стрела-10\""
+	amount = 150
+	producer = UKR
+} 

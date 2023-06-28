@@ -18,6 +18,10 @@ if = {
 		autonomous_state = autonomy_integrated_federal_subject
 	}
 	set_autonomy = {
+		target = PMC
+		autonomous_state = autonomy_integrated_federal_subject
+	}
+	set_autonomy = {
 		target = DNR
 		autonomous_state = autonomy_integrated_puppet
 	}
@@ -29,6 +33,7 @@ if = {
 		puppet = CHE
 		puppet = DNR
 		puppet = LNR
+		puppet = PMC
 	}
 }
 
@@ -359,7 +364,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_tyazbronemashina1_ACB"
+	icon = "GFX_strela_AA"
 }
 create_equipment_variant = {
 	name = "\"Тор-М1\""
@@ -380,7 +385,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_tyazbronemashina1_ACB"
+	icon = "GFX_tunguska_AA"
 }
 create_equipment_variant = {
 	name = "\"Оса\""
@@ -401,7 +406,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_tyazbronemashina1_ACB"
+	icon = "GFX_osa_AA"
 }
 create_equipment_variant = {
 	name = "\"Тунгуска\""
@@ -423,7 +428,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_tyazbronemashina1_ACB"
+	icon = "GFX_tunguska_AA"
 }
 create_equipment_variant = {
 	name = "\"Тайфун-К\""
@@ -1140,7 +1145,7 @@ create_equipment_variant = {
 	icon = "GFX_t90_ABD"
 }
 create_equipment_variant = {
-	name = "БМПТ"
+	name = "БМПТ \"Терминатор\""
 	type = bmpt_chassis_0
 	parent_version = 0
 	modules = {
@@ -1845,6 +1850,7 @@ create_faction = faction_csto
 add_to_faction = CHE
 add_to_faction = BLR
 add_to_faction = KAZ
+add_to_faction = PMC
 remove_from_faction = LNR
 remove_from_faction = DNR
 
@@ -2076,7 +2082,7 @@ add_equipment_production = {
 	equipment = {
 		type = bmpt_chassis_0
 		creator = "RUS" 
-		version_name = "БМПТ"
+		version_name = "БМПТ \"Терминатор\""
 	}
 	requested_factories = 5
 	progress = 0.6
@@ -2420,8 +2426,8 @@ add_equipment_to_stockpile = {
 } 
 add_equipment_to_stockpile = {
 	type = bmpt_chassis_0
-	variant_name = "БМПТ"
-	amount = 1000
+	variant_name = "БМПТ \"Терминатор\""
+	amount = 50
 	producer = RUS
 } 
 add_equipment_to_stockpile = {
