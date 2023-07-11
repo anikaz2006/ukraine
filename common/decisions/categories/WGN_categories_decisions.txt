@@ -1,0 +1,23 @@
+WGN_budget_category = {
+	icon = generic_formable_nations
+
+	allowed = {
+		original_tag = WGN
+	}
+
+	visible = {
+		original_tag = WGN
+	}
+}
+
+WGN_decisions_category = {
+	icon = generic_formable_nations
+
+	allowed = {
+		original_tag = WGN
+	}
+
+	visible = {
+		original_tag = WGN
+	}
+}

@@ -112,6 +112,17 @@ bookmarks = {
 				
 			}
 		}
+		"WGN"={
+			minor = yes
+			history = "WGN_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				WGN_start_idea
+			}
+			focuses = {
+				WGN_utkin_orchestra
+			}
+		}
 		"CHE"={
 			minor = yes
 			history = "CHE_GATHERING_STORM_DESC"

@@ -5,7 +5,7 @@ capital = 14
 set_research_slots = 4
 set_stability = 0.45
 set_war_support = 0.5
-set_convoys = 195
+set_convoys = 250
 if = {
 	limit = {
 		OR = {
@@ -15,10 +15,6 @@ if = {
 	}
 	set_autonomy = {
 		target = CHE
-		autonomous_state = autonomy_integrated_federal_subject
-	}
-	set_autonomy = {
-		target = PMC
 		autonomous_state = autonomy_integrated_federal_subject
 	}
 	set_autonomy = {
@@ -33,7 +29,6 @@ if = {
 		puppet = CHE
 		puppet = DNR
 		puppet = LNR
-		puppet = PMC
 	}
 }
 
@@ -1850,7 +1845,7 @@ create_faction = faction_csto
 add_to_faction = CHE
 add_to_faction = BLR
 add_to_faction = KAZ
-add_to_faction = PMC
+add_to_faction = WGN
 remove_from_faction = LNR
 remove_from_faction = DNR
 
@@ -2264,7 +2259,7 @@ add_equipment_to_stockpile = {
 } 
 add_equipment_to_stockpile = {
 	type = bmp1a_chassis
-	variant_name = "БМП-1"
+	variant_name = "\"БМП-1\""
 	amount = 2000
 	producer = RUS
 } 
@@ -2288,25 +2283,25 @@ add_equipment_to_stockpile = {
 } 
 add_equipment_to_stockpile = {
 	type = bmp2a_chassis
-	variant_name = "БМП-2"
+	variant_name = "\"БМП-2\""
 	amount = 3000
 	producer = RUS
 } 
 add_equipment_to_stockpile = {
 	type = bmd2_chassis
-	variant_name = "БМД-2"
+	variant_name = "\"БМД-2\""
 	amount = 600
 	producer = RUS
 } 
 add_equipment_to_stockpile = {
 	type = bmd3_chassis
-	variant_name = "БМД-3"
+	variant_name = "\"БМД-3\""
 	amount = 160
 	producer = RUS
 } 
 add_equipment_to_stockpile = {
 	type = bmd4_chassis
-	variant_name = "БМД-4"
+	variant_name = "\"БМД-4\""
 	amount = 250
 	producer = RUS
 } 
@@ -2324,7 +2319,7 @@ add_equipment_to_stockpile = {
 } 
 add_equipment_to_stockpile = {
 	type = bmp3a_chassis
-	variant_name = "БМП-3"
+	variant_name = "\"БМП-3\""
 	amount = 1800
 	producer = RUS
 } 
@@ -2432,7 +2427,7 @@ add_equipment_to_stockpile = {
 } 
 add_equipment_to_stockpile = {
 	type = t80_chassis_0
-	variant_name = "Т-80"
+	variant_name = "\"Т-80\""
 	amount = 40
 	producer = RUS
 } 
@@ -2510,13 +2505,13 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = btr1_chassis
-	variant_name = "БТР-70"
+	variant_name = "\"БТР-70\""
 	amount = 2000
 	producer = RUS
 }
 add_equipment_to_stockpile = {
 	type = btr2_chassis
-	variant_name = "БТР-80"
+	variant_name = "\"БТР-80\""
 	amount = 1000
 	producer = RUS
 }
@@ -2747,4 +2742,5 @@ add_equipment_to_stockpile = {
 	amount = 1250
 	producer = RUS
 }
+
 

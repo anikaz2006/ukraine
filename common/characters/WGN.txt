@@ -1,0 +1,130 @@
+characters = {
+	
+	evgeniy_prigozhin = {
+		name = evgeniy_prigozhin
+		portraits={
+			army={
+				small="/gfx/interface/ideas/idea_LEB_generic_land_3.dds"
+			}
+			army={
+				large="/gfx/leaders/WGN/evgeniy_prigozhin.dds"
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = wgn_d
+			traits = { popular_figurehead }
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = wgn
+			traits = { popular_figurehead }
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = wgn_c
+			traits = { popular_figurehead }
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = wgn_n
+			traits = { popular_figurehead }
+		}
+		field_marshal ={
+			traits= { commando trait_engineer fortress_buster urban_assault_specialist wgn_leader }
+			skill=5
+			attack_skill=7
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+	dmitry_utkin = {
+		name = dmitry_utkin
+		portraits={
+			army={
+				small="/gfx/interface/ideas/idea_LEB_generic_land_3.dds"
+			}
+			army={
+				large="/gfx/leaders/WGN/dmitry_utkin.dds"
+			}
+		}
+		corps_commander = { 
+			traits = { wgn_commander harsh_leader organizer urban_assault_specialist commando }
+				
+			skill = 5
+			attack_skill = 7
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+
+		} 
+	}
+
+	mikhail_mizintsev = {
+		name = mikhail_mizintsev
+		portraits={
+			army={
+				small="/gfx/interface/ideas/idea_LEB_generic_land_3.dds"
+			}
+			army={
+				large="/gfx/leaders/WGN/mikhail_mizintsev.dds"
+			}
+		}
+		corps_commander = { 
+			traits = { wgn_commander harsh_leader urban_assault_specialist organizer trait_engineer }
+				
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+
+		} 
+	}
+
+	alexander_kuznetsov = {
+		name = alexander_kuznetsov
+		portraits={
+			army={
+				small="/gfx/interface/ideas/idea_LEB_generic_land_3.dds"
+			}
+			army={
+				large="/gfx/leaders/WGN/alexander_kuznetsov.dds"
+			}
+		}
+		corps_commander = { 
+			traits = { wgn_commander urban_assault_specialist trait_engineer scavenger urban_assault_specialist organizer }
+				
+			skill = 5
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 4
+			logistics_skill = 3
+
+		} 
+	}
+
+	anton_elizarov = {
+		name = anton_elizarov
+		portraits={
+			army={
+				small="/gfx/interface/ideas/idea_LEB_generic_land_3.dds"
+			}
+			army={
+				large="/gfx/leaders/WGN/anton_elizarov.dds"
+			}
+		}
+		corps_commander = { 
+			traits = { wgn_commander winter_specialist trait_engineer fortress_buster trickster urban_assault_specialist adaptable }
+				
+			skill = 5
+			attack_skill = 7
+			defense_skill = 3
+			planning_skill = 7
+			logistics_skill = 3
+
+		} 
+	}
+
+}

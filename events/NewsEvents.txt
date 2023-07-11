@@ -1208,11 +1208,9 @@ news_event = {
 	option = {
 		name = news.27.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1222,11 +1220,8 @@ news_event = {
 		name = news.27.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -1266,11 +1261,9 @@ news_event = {
 	option = {
 		name = news.28.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1279,11 +1272,8 @@ news_event = {
 		name = news.28.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -1323,11 +1313,9 @@ news_event = {
 	option = {
 		name = news.29.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1336,11 +1324,8 @@ news_event = {
 		name = news.29.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -1380,11 +1365,9 @@ news_event = {
 	option = {
 		name = news.30.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1393,11 +1376,8 @@ news_event = {
 		name = news.30.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -1437,11 +1417,9 @@ news_event = {
 	option = {
 		name = news.31.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1450,11 +1428,8 @@ news_event = {
 		name = news.31.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -1494,11 +1469,9 @@ news_event = {
 	option = {
 		name = news.32.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1507,11 +1480,8 @@ news_event = {
 		name = news.32.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -1551,11 +1521,9 @@ news_event = {
 	option = {
 		name = news.33.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1564,11 +1532,8 @@ news_event = {
 		name = news.33.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -1608,11 +1573,9 @@ news_event = {
 	option = {
 		name = news.34.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1621,11 +1584,8 @@ news_event = {
 		name = news.34.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -1665,11 +1625,9 @@ news_event = {
 	option = {
 		name = news.35.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1678,11 +1636,8 @@ news_event = {
 		name = news.35.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -1707,11 +1662,9 @@ news_event = {
 	option = {
 		name = news.36.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1720,11 +1673,8 @@ news_event = {
 		name = news.36.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1764,11 +1714,9 @@ news_event = {
 	option = {
 		name = news.37.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1777,11 +1725,8 @@ news_event = {
 		name = news.37.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -1821,11 +1766,9 @@ news_event = {
 	option = {
 		name = news.38.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1834,11 +1777,8 @@ news_event = {
 		name = news.38.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -1878,11 +1818,9 @@ news_event = {
 	option = {
 		name = news.39.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1891,11 +1829,8 @@ news_event = {
 		name = news.39.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -1935,11 +1870,9 @@ news_event = {
 	option = {
 		name = news.40.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -1948,11 +1881,8 @@ news_event = {
 		name = news.40.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2092,11 +2022,9 @@ news_event = {
 	option = {
 		name = news.43.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2105,11 +2033,8 @@ news_event = {
 		name = news.43.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2149,11 +2074,9 @@ news_event = {
 	option = {
 		name = news.44.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2162,11 +2085,8 @@ news_event = {
 		name = news.44.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2206,11 +2126,9 @@ news_event = {
 	option = {
 		name = news.45.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2219,11 +2137,8 @@ news_event = {
 		name = news.45.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2263,11 +2178,9 @@ news_event = {
 	option = {
 		name = news.46.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2276,11 +2189,8 @@ news_event = {
 		name = news.46.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2320,11 +2230,9 @@ news_event = {
 	option = {
 		name = news.47.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2333,11 +2241,8 @@ news_event = {
 		name = news.47.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2377,11 +2282,9 @@ news_event = {
 	option = {
 		name = news.48.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2390,11 +2293,8 @@ news_event = {
 		name = news.48.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2419,11 +2319,9 @@ news_event = {
 	option = {
 		name = news.49.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2432,11 +2330,8 @@ news_event = {
 		name = news.49.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2461,11 +2356,9 @@ news_event = {
 	option = {
 		name = news.50.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2474,11 +2367,8 @@ news_event = {
 		name = news.50.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2518,11 +2408,9 @@ news_event = {
 	option = {
 		name = news.51.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2531,11 +2419,8 @@ news_event = {
 		name = news.51.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2575,11 +2460,9 @@ news_event = {
 	option = {
 		name = news.52.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2588,11 +2471,8 @@ news_event = {
 		name = news.52.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2602,6 +2482,7 @@ news_event = {
 	id = news.53
 	title = news.53.t
 	desc = news.53.d
+	picture = GFX_news_event_061
 	
 	major = yes
 	
@@ -2631,11 +2512,9 @@ news_event = {
 	option = {
 		name = news.53.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2644,11 +2523,8 @@ news_event = {
 		name = news.53.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2658,6 +2534,7 @@ news_event = {
 	id = news.54
 	title = news.54.t
 	desc = news.54.d
+	picture = GFX_news_event_062
 	
 	major = yes
 	
@@ -2687,11 +2564,9 @@ news_event = {
 	option = {
 		name = news.54.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2700,11 +2575,8 @@ news_event = {
 		name = news.54.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2714,6 +2586,7 @@ news_event = {
 	id = news.55
 	title = news.55.t
 	desc = news.55.d
+	picture = GFX_news_event_063
 	
 	major = yes
 	
@@ -2743,11 +2616,9 @@ news_event = {
 	option = {
 		name = news.55.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2756,11 +2627,8 @@ news_event = {
 		name = news.55.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2770,6 +2638,7 @@ news_event = {
 	id = news.56
 	title = news.56.t
 	desc = news.56.d
+	picture = GFX_news_event_064
 	
 	major = yes
 	
@@ -2799,11 +2668,9 @@ news_event = {
 	option = {
 		name = news.56.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2812,11 +2679,8 @@ news_event = {
 		name = news.56.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2826,6 +2690,7 @@ news_event = {
 	id = news.57
 	title = news.57.t
 	desc = news.57.d
+	picture = GFX_news_event_065
 	
 	major = yes
 	
@@ -2855,11 +2720,9 @@ news_event = {
 	option = {
 		name = news.57.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2868,11 +2731,8 @@ news_event = {
 		name = news.57.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2882,6 +2742,7 @@ news_event = {
 	id = news.58
 	title = news.58.t
 	desc = news.58.d
+	picture = GFX_news_event_066
 	
 	major = yes
 	
@@ -2911,11 +2772,9 @@ news_event = {
 	option = {
 		name = news.58.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2924,11 +2783,8 @@ news_event = {
 		name = news.58.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2938,6 +2794,7 @@ news_event = {
 	id = news.59
 	title = news.59.t
 	desc = news.59.d
+	picture = GFX_news_event_067
 	
 	major = yes
 	
@@ -2967,11 +2824,9 @@ news_event = {
 	option = {
 		name = news.59.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -2980,11 +2835,8 @@ news_event = {
 		name = news.59.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -2994,6 +2846,7 @@ news_event = {
 	id = news.60
 	title = news.60.t
 	desc = news.60.d
+	picture = GFX_news_event_068
 	
 	major = yes
 	
@@ -3022,11 +2875,9 @@ news_event = {
 	option = {
 		name = news.60.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3035,11 +2886,8 @@ news_event = {
 		name = news.60.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3049,7 +2897,7 @@ news_event = {
 	id = news.61
 	title = news.61.t
 	desc = news.61.d
-	
+	picture = GFX_news_event_069
 	major = yes
 	
 	trigger = {
@@ -3078,11 +2926,9 @@ news_event = {
 	option = {
 		name = news.61.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3091,11 +2937,8 @@ news_event = {
 		name = news.61.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-			    tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3105,6 +2948,7 @@ news_event = {
 	id = news.62
 	title = news.62.t
 	desc = news.62.d
+	picture = GFX_news_event_070
 	
 	major = yes
 	
@@ -3134,11 +2978,9 @@ news_event = {
 	option = {
 		name = news.62.r
 		trigger = {
-			OR = {
-			    tag = RUS
-			    tag = LNR
-			    tag = DNR
-			    tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3147,11 +2989,8 @@ news_event = {
 		name = news.62.c
 		trigger = {
 			NOT = { 
-			    tag = RUS
-			    tag = UKR
-			    tag = DNR
-			    tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3161,6 +3000,7 @@ news_event = {
 	id = news.63
 	title = news.63.t
 	desc = news.63.d
+	picture = GFX_news_event_071
 	
 	major = yes
 	
@@ -3190,11 +3030,9 @@ news_event = {
 	option = {
 		name = news.63.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag = LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3203,11 +3041,8 @@ news_event = {
 		name = news.63.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3217,6 +3052,7 @@ news_event = {
 	id = news.64
 	title = news.64.t
 	desc = news.64.d
+	picture = GFX_news_event_072
 	
 	major = yes
 	
@@ -3246,11 +3082,9 @@ news_event = {
 	option = {
 		name = news.64.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag= LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3259,11 +3093,8 @@ news_event = {
 		name = news.64.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3288,11 +3119,9 @@ news_event = {
 	option = {
 		name = news.65.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag = LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3301,11 +3130,8 @@ news_event = {
 		name = news.65.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3330,11 +3156,9 @@ news_event = {
 	option = {
 		name = news.66.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag = LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3343,11 +3167,8 @@ news_event = {
 		name = news.66.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3372,11 +3193,9 @@ news_event = {
 	option = {
 		name = news.67.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag = LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3385,11 +3204,8 @@ news_event = {
 		name = news.67.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3456,11 +3272,9 @@ news_event = {
 	option = {
 		name = news.69.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag = LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3469,11 +3283,8 @@ news_event = {
 		name = news.69.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3498,11 +3309,9 @@ news_event = {
 	option = {
 		name = news.70.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag = LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3511,11 +3320,8 @@ news_event = {
 		name = news.70.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3540,11 +3346,9 @@ news_event = {
 	option = {
 		name = news.71.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag = LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3553,11 +3357,8 @@ news_event = {
 		name = news.71.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3582,11 +3383,9 @@ news_event = {
 	option = {
 		name = news.72.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag = LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3595,11 +3394,8 @@ news_event = {
 		name = news.72.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3609,6 +3405,7 @@ news_event = {
 	id = news.73
 	title = news.73.t
 	desc = news.73.d
+	picture = GFX_news_event_073
 	
 	major = yes
 	
@@ -3638,11 +3435,9 @@ news_event = {
 	option = {
 		name = news.73.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag= LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3651,11 +3446,8 @@ news_event = {
 		name = news.73.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3694,11 +3486,9 @@ news_event = {
 	option = {
 		name = news.74.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag= LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3707,11 +3497,8 @@ news_event = {
 		name = news.74.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3750,11 +3537,9 @@ news_event = {
 	option = {
 		name = news.75.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag= LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3763,11 +3548,8 @@ news_event = {
 		name = news.75.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3806,11 +3588,9 @@ news_event = {
 	option = {
 		name = news.76.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag= LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3819,11 +3599,8 @@ news_event = {
 		name = news.76.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3862,11 +3639,9 @@ news_event = {
 	option = {
 		name = news.78.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag= LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3875,11 +3650,8 @@ news_event = {
 		name = news.78.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -3918,11 +3690,9 @@ news_event = {
 	option = {
 		name = news.77.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag= LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -3931,11 +3701,8 @@ news_event = {
 		name = news.77.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	
@@ -4017,11 +3784,9 @@ news_event = {
 	option = {
 		name = news.80.r
 		trigger = {
-			OR = {
-				tag = RUS
-				tag= LNR
-				tag = DNR
-				tag = BLR	
+			has_war_with = UKR
+			NOT = {
+				has_war_with = RUS
 			}
 		}
 	}
@@ -4030,11 +3795,8 @@ news_event = {
 		name = news.80.c
 		trigger = {
 			NOT = { 
-				tag = RUS
-				tag = UKR
-				tag = DNR
-				tag = LNR
-				tag = BLR
+				has_war_with = UKR
+				has_war_with = RUS
 			}
 		}
 	}	

@@ -33,12 +33,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward={
-		        set_power_balance = {
-                                        id = RUS_power_balance
-                                        left_side = default_left_side
-                                        right_side = default_right_side
-                                        set_value = 0
-                        }
 			country_event = {
 				id = smo.2
 				days = 0
@@ -81,7 +75,7 @@ focus_tree = {
 		relative_position_id = RUS_increase_the_number_of_troops_on_the_border
 		prerequisite = { focus = RUS_increase_the_number_of_troops_on_the_border }
 		prerequisite = { focus = RUS_there_will_be_no_peaceful_solution focus = RUS_negotiations_with_nato }
-		cost = 0.55
+		cost = 0.80
 		x = 0
 		y = 2
 		completion_reward={
@@ -117,7 +111,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = RUS_there_will_be_no_peaceful_solution
 		}
-		cost = 0.5
+		cost = 0.80
 		x = 6
 		y = 1
 		completion_reward={
@@ -162,7 +156,7 @@ focus_tree = {
 		icon = GFX_RUS_if_you_dont_want_to_do_it_right_youll_do_it_wrong
 		relative_position_id = RUS_failure_of_negotiations
 		prerequisite = { focus = RUS_failure_of_negotiations focus = RUS_conflict_flares_up_again }
-		cost = 0.5
+		cost = 0.70
 		x = 0
 		y = 2
 		completion_reward={
@@ -246,7 +240,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = RUS_take_troops_off_the_border
 		}
-		cost = 0.5
+		cost = 1
 		x = -4
 		y = 1
 		completion_reward={
@@ -507,7 +501,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_joint_military_exercises_with_belarus }
 		prerequisite = { focus = RUS_if_you_dont_want_to_do_it_right_youll_do_it_wrong focus = RUS_cut_off_gas_and_oil_supplies_to_ukraine }
 		prerequisite = { focus = RUS_wait_for_the_moment focus = RUS_return_the_troops focus = RUS_cut_off_gas_and_oil_supplies_to_ukraine }
-		cost = 0.5
+		cost = 1.4
 		x = -4
 		y = 2
 		completion_reward={
@@ -796,11 +790,25 @@ focus_tree = {
 			}
 		}
 		completion_reward={
-			add_timed_idea = {
-					idea = RUS_rapid_offensive_3
-					days = 20
+			set_power_balance = {
+				id = RUS_power_balance
+				left_side = default_left_side
+				right_side = default_right_side
+				set_value = 0
+			}
+			WGN = {
+				set_power_balance = {
+					id = WGN_power_balance
+					left_side = default_left_side
+					right_side = default_right_side
+					set_value = 0
 				}
-        add_ideas = RUS_RUB_1		
+			}
+			add_timed_idea = {
+				idea = RUS_rapid_offensive_3
+				days = 20
+			}
+        add_ideas = { RUS_RUB_1 }
         KAZ = {
 				add_ideas = {
 					does_not_participate_in_smo_in_ukraine
@@ -816,6 +824,11 @@ focus_tree = {
 					does_not_participate_in_smo_in_ukraine
 				}
         }
+		WGN = {
+			add_ideas = {
+				does_not_participate_in_smo_in_ukraine
+			}
+		}
 		DNR = {
         	complete_national_focus =  DNR_snovavoyna
 			hidden_effect = {
@@ -840,6 +853,10 @@ focus_tree = {
 			country_event = {
 				id = super.1
 				hours = 4
+			}
+			country_event = {
+				id = rus.67
+				days = 3
 			}
 			CHE = {
 				country_event = {
@@ -884,11 +901,25 @@ focus_tree = {
 			}
 		}
 		completion_reward={
+			set_power_balance = {
+				id = RUS_power_balance
+				left_side = default_left_side
+				right_side = default_right_side
+				set_value = 0
+			}
+			WGN = {
+				set_power_balance = {
+					id = WGN_power_balance
+					left_side = default_left_side
+					right_side = default_right_side
+					set_value = 0
+				}
+			}
 			add_timed_idea = {
 					idea = RUS_rapid_offensive_3
 					days = 20
 				}
-        add_ideas = {		RUS_RUB_1		}
+        add_ideas = {		RUS_RUB_1	}
         KAZ = {
 				add_ideas = {
 					does_not_participate_in_smo_in_ukraine
@@ -899,6 +930,11 @@ focus_tree = {
 					does_not_participate_in_smo_in_ukraine
 				}
         }
+		WGN = {
+			add_ideas = {
+				does_not_participate_in_smo_in_ukraine
+			}
+		}
 			DNR = {
         complete_national_focus =  DNR_snovavoyna
 		hidden_effect = {
@@ -929,6 +965,10 @@ focus_tree = {
 			country_event = {
 				id = super.1
 				hours = 4
+			}
+			country_event = {
+				id = rus.67
+				days = 3
 			}
 			CHE = {
 				country_event = {

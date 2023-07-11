@@ -2060,17 +2060,11 @@ spriteType = {
 }
 
 
-
-
 spriteType = {
 	name = "GFX_idea_NTO_supply_of_the_eastern_european_army_1"
 	texturefile = "gfx/interface/ideas/EUR/supply1.dds"
 }
 
-spriteType = {
-	name = "GFX_idea_RUS_PMC_WAGNER"
-	texturefile = "gfx/interface/ideas/decision-spirits-ideas/RUS_PMC_WAGNER.dds"
-}
 spriteType = {
 	name = "GFX_idea_RUS_baza"
 	texturefile = "gfx/interface/ideas/RUS_baza.tga"
@@ -2079,4 +2073,11 @@ spriteType = {
 	name = "GFX_idea_RUS_baza_2"
 	texturefile = "gfx/interface/ideas/RUS_baza_2.tga"
 }
+
+################ WGN
+spriteType = {
+	name = "GFX_idea_WGN_start"
+	texturefile = "gfx/interface/ideas/WGN/WGN_start_idea.dds"
+}
+
 }
